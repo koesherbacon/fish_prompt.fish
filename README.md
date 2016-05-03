@@ -1,5 +1,5 @@
 # fish_prompt.fish
-This is my customized fish_prompt.fish from [ ~/.config/fish/functions/fish_prompt.fish ]
+This is my customized fish_prompt.fish from `~/.config/fish/functions/fish_prompt.fish`
 
 Please feel free to copy and use this custom fish prompt in your terminal.
 
@@ -35,6 +35,7 @@ That should bring up your current prompt.  Copy and paste the following into it,
    end
    printf ' ╚═▷ '
    set_color normal
-end```
+end
+```
 
 The prompt will change automatically in your terminal!  Woot!
