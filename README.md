@@ -11,30 +11,3 @@ A new browser window/tab should open and then select Prompt.  Thre you can also 
 Here's a screenshot of my customized propmpt:
 
 ![Screenshot](https://s32.postimg.org/pubao326t/Screenshot_at_2016_05_02_20_11_37.png)
-
-After fish is installed, enter these commands into your terminal to set up the prompt:<br>
-`$ leafpad ~/.config/fish/functions/fish_prompt.fish`<br>
-     (...or whatever editor your prefer)
-That should bring up your current prompt.  Copy and paste the following into it, then save.  <br>
-<code>function fish_prompt
-
-# by Ev 
-# Github Profile: https://github.com/koesherbacon
-# Github fish_prompt repo: https://github.com/koesherbacon/fish_prompt.fish
-# Email: ev.bacon@gmail.com
-
-   set_color $fish_color_cwd
-   printf ' ╔═◯ %s' (prompt_pwd)
-   set_color normal
-
-   # Line 2
-   set_color $fish_color_cwd
-   echo
-   if test $VIRTUAL_ENV
-       printf "(%s) " (set_color blue)(basename $VIRTUAL_ENV)(set_color normal)
-   end
-   printf ' ╚═▷ '
-   set_color normal
-end</code>
-
-The prompt will change automatically in your terminal!  Woot!
